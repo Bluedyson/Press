@@ -39,7 +39,7 @@ import { withBase } from 'vitepress'
 const iframe = ref()
 const loading_div = ref()
 const iframe_height = ref(window.innerHeight)
-const iframe_weight = ref(iframe_height.value * 0.52)
+const iframe_weight = ref(iframe_height.value * 0.49)
 
 
 onMounted(() => {

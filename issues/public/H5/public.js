@@ -25,13 +25,15 @@ window.onload = function () {
     var out_warp_1 = document.getElementById("inner_swiper_1");
     
     //修正尺寸 dom1
-    if (winWidth > 435 || winHeight > 961){
-        canvas_dom_1.width = 390;
-        canvas_dom_1.height = 850;
-    }else{
-        canvas_dom_1.width = winWidth;
-        canvas_dom_1.height = (winWidth / 16) * 8.5;
-    }
+    // if (winWidth > 435 || winHeight > 961){
+    //     canvas_dom_1.width = 390;
+    //     canvas_dom_1.height = 850;
+    // }else{
+    //     canvas_dom_1.width = winWidth;
+    //     canvas_dom_1.height = (winWidth / 16) * 8.5;
+    // }
+    canvas_dom_1.width = winWidth;
+    canvas_dom_1.height = (winWidth / 16) * 8.5;
 
     var context_1 = document.getElementById("canvas_1_page").getContext('2d');
 
@@ -63,13 +65,8 @@ window.onload = function () {
     var out_warp_2 = document.getElementById("inner_swiper_2");
     
     //修正尺寸
-    if (winWidth > 435 || winHeight > 961){
-        canvas_dom_2.width = 390;
-        canvas_dom_2.height = 850;
-    }else{
-        canvas_dom_2.width = winWidth;
-        canvas_dom_2.height = (winWidth / 16) * 8.5;
-    }
+    canvas_dom_2.width = winWidth;
+    canvas_dom_2.height = (winWidth / 16) * 8.5;
     var context_2 = document.getElementById("canvas_2_page").getContext('2d');
 
     var mySwiper3 = new Swiper('#swiper-container3', { //第2个采访
@@ -101,13 +98,8 @@ window.onload = function () {
     var out_warp_3 = document.getElementById("inner_swiper_3");
     
     //修正尺寸
-    if (winWidth > 435 || winHeight > 961){
-        canvas_dom_3.width = 390;
-        canvas_dom_3.height = 850;
-    }else{
-        canvas_dom_3.width = winWidth;
-        canvas_dom_3.height = (winWidth / 16) * 8.5;
-    }
+    canvas_dom_3.width = winWidth;
+    canvas_dom_3.height = (winWidth / 16) * 8.5;
     var context_3 = document.getElementById("canvas_3_page").getContext('2d');
 
     var mySwiper4 = new Swiper('#swiper-container4', { //第3个采访
