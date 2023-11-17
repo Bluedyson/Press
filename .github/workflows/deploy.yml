@@ -49,7 +49,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: /Press/issues/.vitepress/dist
+          path: issues/.vitepress/dist
 
   # Deployment job
   deploy:
