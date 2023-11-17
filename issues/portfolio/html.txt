@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public.css">
+    <link rel="stylesheet" href="./asset/EMOJI.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css" rel="stylesheet">
+</head>
+<body style="overflow: hidden;">
+    <div style="width: 100vw;height: 100vh;background-color: rgb(255, 255, 255);position: absolute;z-index: 1;"></div>
+    <div style="width: 100vw;height: 99vh;position: absolute;" id="video_1">
+        <div onclick="stopplay()" id="video_pause" style="position: absolute;font-size: 200%;margin-left: 88vw;margin-top: 1vh;background-color: rgba(36, 36, 36, 0.419);padding-left: 0.5rem;padding-right: 0.5rem;z-index: 0;">✖</div>
+        <video id="video_player" style="width: 100vw;height: 100vh;" src="./asset/zgf-01.mp4"></video>
+    </div>
+    <div id="IN_page" style="height: 100%;width: 100vw;position: absolute;">
+        <!-- Swiper -->
+        <div class="swiper" id="swiper-container1">
+            <div class="swiper-wrapper" style="height: 100vh;">
+                
+
+                <!--one page-->
+                <div class="swiper-slide" style="overflow: hidden;">
+                    <div style="position: absolute;z-index: 990;background-color: rgb(255, 255, 255);height: 100vh;width: 100vw;">
+                        <div style="width: 100vw;height: 100vh;background-color: rgba(132, 132, 132, 0.314);position: absolute;z-index: 9999;"></div>
+                        <img src="./asset/content_page.png" style="width: 100vw;height: 100vh;filter: blur(4px);">
+                    </div>
+                    <div style="height: 100vh;display: flex;align-items: center;z-index: 99999;position: relative;text-align: center;">
+                        <div style="width: 100vw;align-items: center;">
+                            <div class="content" style="text-indent: 32px;">
+                                2022年11月下旬，河南省疫情愈演愈烈，为避免学生滞留，郑州高校通知学生尽快离校。在匆忙与忐忑之间郑州学子踏上了漫漫返乡路，昼夜兼程的网约车、顺风车和大巴车成为他们的归乡的摆渡工具。摆渡途中的所见所闻折射着疫情之下摆渡行业的人事冷暖。
+                            </div>
+                            <img src="./asset/tonextpage.png" style="width: 12vw;position: relative;top: 30vh;">
+                        </div>
+                    </div>    
+                </div>
+                <!--one page end-->
+
+                <!--one page-->
+                <div class="swiper-slide" style="overflow: hidden;">
+                    <div style="position: absolute;z-index: 990;height: 100vh;width: 100vw;">
+                        <div style="width: 100vw;height: 100vh;background-color: rgba(8, 8, 8, 0.204);position: absolute;z-index: 9999;"></div>
+                        <img src="./asset/content_page.png" style="width: 100vw;height: 100vh;filter: blur(4px);">
+                    </div>
+                    <div style="height: 100vh;display: flex;align-items: center;z-index: 99999;position: relative;text-align: center;">
+                        <!--content-->
+                        <div style="display: block;width: 100vw;flex-wrap: wrap;">
+                            <div style="font-family: 'EMOJI';" onclick="jumptopage(2)">
+                                <span style="font-size: 700%;font-family: 'EMOJI';">🚕</span><br>
+                                <span style="font-size: 1.2rem;">网约车</span>
+                            </div>
+                            <div style="font-family: 'EMOJI';">
+                                <span style="font-size: 700%;font-family: 'EMOJI';" onclick="jumptopage(3)">🚗</span><br>
+                                <span style="font-size: 1.2rem;">顺风车</span>
+                            </div>
+                            <div style="font-family: 'EMOJI';margin-top: 2vh;">
+                                <span style="font-size: 700%;font-family: 'EMOJI';" onclick="jumptopage(4)">🚌</span><br>
+                                <span style="font-size: 1.2rem;">大巴车</span>
+                            </div>
+                            <div style="font-size: 1.2rem;position: relative;top: 10vh;font-weight: 700;">点击选择你的返乡方式</div>
+                        </div>
+                    </div>    
+                </div>
+                <!--one page end-->
+
+                <!--FIRST page-->
+                <!--one page-->
+                <div class="swiper-slide" style="overflow: hidden;">
+                    <div style="position: absolute;z-index: 999;height: 27vh;width: 100vw;">
+                        <div style="width: 100vw;height: 27vh;top: -3.125vh;">
+                            <canvas id="canvas_1_page" style="box-shadow: 0px 0px 35px rgba(114, 114, 114, 0.899);"></canvas>
+                        </div>
+                    </div>
+                    <div style="height: 100vh;display: flex;align-items: center;z-index: 990;position: relative;text-align: center;">
+                        <!--content-->
+                        <!--long page start-->
+                        <div class="swiper" id="swiper-container2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" id="inner_swiper_1">
+
+                                    <div class="content" style="padding-top: 57vw;">
+                                        2022年11月下旬，郑州市正实行静默管理，高校通知学生们如果能买到票就尽早返乡，以免后期因疫情滞留在学校。河南工业大学学生丘景和陈涛的家都远在广西壮族自治区。11月23日晚，在接到学院准许申请离校的通知后，踏上返乡之路。
+                                    </div>
+
+                                    <div class="content">
+                                        由于校园内快递停发，两人带着两个分别装着电脑显示屏和主机的大箱子，叠放的箱子高度比一个成年人还要高大。他们匆忙坐上校门口的网约出租车，司机楼师傅帮着他们安置行李和两个箱子。
+                                    </div>
+
+                                    <div class="content">
+                                        这段时间，被大学生戏称的“逃离郑州”巨幕不断上演。高校门口早早地排起了汽车长队，据悉在校门口等着的大部分都是网约车。静默期间，大部分跑单的网约车司机都会在学校门口等返乡学生，等待一个个送到郑州火车站、郑州西站或是新郑机场的“大订单”。
+                                    </div>
+                                    
+                                    <div class="photo_style">
+                                        <img src="./asset/qhy_01.png">
+                                        河南工业大学门口等待的网约车
+                                    </div>
+
+                                    <div class="photo_style">
+                                        <img src="./asset/qhy_03.jpg">
+                                        郑州东站网约车入口
+                                    </div>
+
+                                    <div class="content">
+                                        楼师傅也是其中之一，这段时间，郑州疫情形式愈演愈烈，大多市民们不敢出门。作为全职网约车司机，这些迫切离郑返乡的大学生们成了这段时间的“稀缺”客源。接到陈涛这一单也许并不是完全的“巧合”，前一天晚上楼师傅就是在学校附近的汽车充电站休息的。
+                                    </div>
+
+                                    <div class="content">
+                                        地理位置近一些，网约APP上的大数据就能多匹配一些单量。网约车工作性质特殊，疫情虽严重，但也避免不了接触陌生人，既害怕自己回家一不小心把新冠传染给家人，也希望能够趁大学生返乡高峰期接到更多订单，秉持着这样的心理，楼师傅和几个司机这几天都是睡在学校附近的汽车充电站或者车里，吃住都在外面。一大早起来，立马进行车内消毒、上平台、接订单的准备工作，蓄势待发，这是疫情期间难得的订单量小峰值。
+                                    </div>
+
+                                    <div class="photo_style">
+                                        <img src="./asset/qhy_02.jpg">
+                                        夜间充电站驻满了车辆
+                                    </div>
+
+                                    <div class="content">
+                                        待行李整顿完毕，陈涛表示需要麻烦楼师傅先绕路去顺丰快递点，两个大箱子实在难以带着返乡，他不打算与箱子同行，选择邮寄到家。离最近的快递点也需要十分钟的车程。到了快递点之后，由于两个大箱子体积超标，无法全部邮寄。陈涛和丘景谁都没料到这个插曲，沟通将近20分钟后，只把装着主机的箱子寄了回去。回乡路漫漫，带着电脑显示屏、行李箱和背包是不小的负担。
+                                    </div>
+
+                                    <div class="content">
+                                        “同学，你们这大件实在带不回去，信得过我的话，可以先放在我家，等什么时候你们开学回来再拿回去都行。我这个身份证啊、电话号什么的都可以给你们拍一下，做个保障，你们心里也可以放心是不是？”楼师傅提议道。这也不失为一种办法，但电脑是请假期间完成作业的必需品，最终还是决定将另一个箱子带上高铁。
+                                    </div>
+
+                                    <div class="content">
+                                        在去车站的路上，楼师傅聊到了自家的三个孩子，因为疫情在家上网课。“这疫情时期大家还真是都不容易，上学难，上班也难啊！回家不容易，出门也要注意防护。”
+                                    </div>
+
+                                    <div class="content">
+                                        其实，除了大学生返乡这段时间，网约车订单量并不多，很多时候都入不敷出。就一天而言，车租费用120元，充电得花费40元左右，一天起码需要扣掉150块钱。除此之外，跑单挣得还得给平台划25%左右。楼师傅前一天扣除平台的分成大概跑了200元，一天下来真正留给一家老小的生活费只有50元左右。
+                                    </div>
+
+                                    <div class="content">
+                                        疫情之下，从早上7点出车到晚上12点左右收车，满打满算的8个小时工作时间所得的酬劳，并不能完全满足家庭所需，压力倍增。疫情单量不够是收入缩减的主要原因，楼师傅这段时间主要的单量就是离校返乡的大学生们，所以经常都是在学校附近等着，就算回家也只是给不能出小区的家里人送物资，远远地隔着小区栏杆，顺便看一眼妻儿。
+                                    </div>
+
+                                    <div class="content">
+                                        在成为全职网约车司机前，楼师傅从事装修行业，但因为房不好卖了，装修行业也受牵连，没有多少活可以干。有朋友推荐来跑网约车，至少能出工就有收入，总有人需要出行。从那时算起，楼师傅成为全职网约车司机已两年余。期间也遇到了形形色色的人，糟心的暖心的都经历过，楼师傅叹道：“大家都不容易，你们学生也难。”
+                                    </div>
+
+                                    <div class="content">
+                                        前几天接到一位郑州大学返乡大学生，家乡远在内蒙古。学生母亲约了楼师傅的车，提前打电话沟通好了接送时间和地点，又建了三人的微信群，时刻与孩子和楼师傅保持联系。楼师傅把学生安全送到之后拍了张照片发在群里，家长为了感谢疫情特殊时期还如此耐心的楼师傅，向他转了车费以外的红包，但楼师傅没收，他说：“不用谢，家长都担心小孩安全嘛，这个天下父母心，不赚这个钱。等明年小孩回学校不好打车的话也可以跟我说，我到时候来高铁站接，你也放心。”
+                                    </div>
+
+                                    <div class="content">
+                                        一路上，楼师傅十分健谈。到车站了，楼师傅再次提出将带不回去的箱子先放他这，不用担心。丘景和陈涛婉拒了楼师傅的好意，并十分感激楼师傅绕路帮忙寄快递、等待与商家协商等一路上的帮助。
+                                    </div>
+
+                                    <div class="content">
+                                        “师傅，我们这耽误您的时间的费用补给您，真的麻烦您了！”
+                                    </div>
+
+                                    <div class="content" style="margin-bottom: 10vh;">
+                                        “你们都是学生，跑这么远来上学不容易，我不挣这个钱，路上小心啊！这个大件要是到时候过不了安检或者还是不好带，我就待会在外面等一会，你们打电话给我，我回来给你们拿上，带不走就尽管联系我！”
+                                    </div>
+                                    <div onclick="onClick_to_menu()" class="back_menu_button">返回<br>目录</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--long page end-->
+
+                    </div>
+                </div>
+                <!--one page end-->
+                
+                <!--second page-->
+                <!--one page-->
+                <div class="swiper-slide" style="overflow: hidden;">
+                    <div style="position: absolute;z-index: 999;height: 27vh;width: 100vw;">
+                        <div style="width: 100vw;height: 27vh;top: -3.125vh;">
+                            <canvas id="canvas_2_page" style="box-shadow: 0px 0px 35px rgba(114, 114, 114, 0.899);"></canvas>
+                        </div>
+                    </div>
+                    <div style="height: 100vh;display: flex;align-items: center;z-index: 990;position: relative;text-align: center;">
+                        <!--content-->
+                        <!--long page start-->
+                        <div class="swiper" id="swiper-container3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" id="inner_swiper_2">
+
+                                    <div class="content" style="padding-top: 57vw;">
+                                        11月开始，不少郑州的高校都发布了准许在校大学生返乡的通知，由于通知得紧急，很多学生都来不及订购返乡的车票，不少省内的学生都选择跨市的私家顺风车回家。<br>
+                                    </div>
+
+                                    <div class="content">
+                                        11月24日，家在焦作市的河南工业大学学生王可昂约好了单奇的顺风车，由于郑州的交通执法部门紧盯各客运场站，严查严办私家车非法营运现象，单师傅将上车地点约在了郑州连霍高速口，并提前和王可昂沟通好，假装是亲戚关系来帮忙接孩子回家。
+                                    </div>
+                                    
+                                    <div class="photo_style">
+                                        <img src="./asset/wk-01.jpg">
+                                        返乡期间连霍高速部分路段车况
+                                    </div>
+
+                                    <div class="content">
+                                        单师傅这般规避检查的做法并非个例，在特殊时期，已成为私家顺风车行业约定俗成的规矩。<br>
+                                    </div>
+
+                                    <div class="content">
+                                        单奇原本在山东青岛的连锁酒吧工作，但受到疫情的影响，酒吧暂停营业，他从9月初就回到了老家河南焦作。单师傅的姐夫组织了一个车队，主要负责接送从郑州到焦作来回路段的乘客。平时车队忙碌不过来时，有多余的单子就会联系他。10月开始，河南疫情不容乐观，单奇一家的收入就靠他的姐夫给他派活。
+                                    </div>
+
+                                    <div class="content">
+                                        受郑州市疫情封控的影响，单师傅平时常走的郑州到焦作的路段被封，他只能选择绕路走高速收费路段，路程耗油也相对变多，油费翻了两倍不止。受封控影响，过往的乘客也寥寥无几。常常来回一趟，单师傅只能接到一单。而且经常遇到车被堵在高速路上的情况，等出站就要花费一个小时。原本从郑州到焦作一个半小时的路程，现在需要花三个小时。
+                                    </div>
+
+                                    <div class="content">
+                                        单师傅所在的车队出车大多是跨市区的，其中很多地方都是中高风险地区。如果从郑州回来扫了焦作内的场所码就会变成黄码。“一般我们都会提前和乘客沟通好，如果查的不严，我们就会借用乘客的手机或者乘客提供的支付宝账号去扫场所码，只有隐藏自己的行程，才能有下一次出车的机会。不然得在家隔离一周，又挣不到钱了。”
+                                    </div>
+
+                                    <div class="content">
+                                        疫情下的路况和管控情况无疑加大了私家顺风车行业的出车成本，11月下旬是郑州大学生返乡的高峰期，供不应求的顺风车市场，在缺少规范管理下，自然出现了收费乱象。
+                                    </div>
+
+                                    <div class="content">
+                                        在受到疫情封控影响之前，车队经营还不错。从郑州到焦作来往的乘客多，通常单师傅一个来回能接到两拨乘客，可以选择的路线也多，路上90多公里的路程要价约100元。考虑到特殊时期的成本和收益，单师傅一车的定价是每人300元，是在那个时期相对便宜和良心的价格。
+                                    </div>
+
+                                    <div class="content">
+                                        单师傅的微信车队群里就有一位同行，说自己22号那天出车跑了一天学生的单，足足收了7000多元，从郑州到焦作，向每个学生要了1000多元的高价。单师傅提起那位高收费的同行时，非常愤怒但又只能无奈地摇头，“本来这段时间学生回家一趟就不容易，成本因为路线问题多了，确实收费要比平时会高些，但绝对不能没了良心啊，自己想赚钱但也不能这么赚。” 
+                                    </div>
+
+                                    <div class="content">
+                                        下午13点，单师傅到了王可昂等车的郑州连霍高速沟赵收费站处，单师傅下车帮他把行李搬了上去，正准备出发时，单师傅又被安排去接另一个学生一道回焦作。由于被突然加了一单，单师傅没有提前联系好便去接了另一个学生。
+                                    </div>
+
+                                    <div class="photo_style">
+                                        <img src="./asset/wk-02.png">
+                                        沟赵收费站站口
+                                    </div>
+
+                                    <div class="photo_style">
+                                        <img src="./asset/wk-03.png">
+                                        沟赵收费站站口等待顺风车的大学生
+                                    </div>
+
+                                    <div class="content">
+                                        在回焦作的高速路上，单师傅和新上车的学生商议下车地点时，才发现不对劲，由于负责人安排的失误，他下车的地点和本来计划要接的学生下车地点不一样。本来要去焦作南高速，但他要在修武高速口下车，车要绕路且在那边下车需要再多交一份高速费。单师傅有些后悔，但是学生返乡一趟也不容易，为了能让学生安全到家，也并没有再多收学生的钱。
+                                    </div>
+
+                                    <div class="content">
+                                        单师傅一路开得平稳，在车上，和王可昂等学生聊起了家常，也谈论起最近拉乘客绕路与下车的困难。“这两天，常看到从郑州回来的大学生拖着行李箱在南高速匝道的一边排着长队往下走，选择直接让乘客在匝道上下车，虽然危险，但是我们如果送乘客出高速去正常道路上的话，就要扫场所码，如果被赋上黄码就没法再拉跨市区的乘客了。这段时间这种情况很常见，虽然不合规但我们也只能无奈照做。”过了修武高速路的收费站，单师傅为了避开扫场所码，将后来上车的那位学生送到了匝道口，掉头返回去之后，继续送王可昂回家。
+                                    </div>
+
+                                    <div class="content" style="margin-bottom: 15vh;">
+                                        王可昂到达目的地已是下午18点左右，临下车前，“送完你了，我赶紧去接下一单喽！趁着这会能多接一单是一单吧，家里5岁的小女儿还等着我回家呢。”单师傅拿起旁边的水杯灌了几口水，揉了揉眼睛，捶了捶由于长时间开车而酸痛的后腰，又再次回到了前往郑州的路上。
+                                    </div>
+                                    <div onclick="onClick_to_menu()" class="back_menu_button">返回<br>目录</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--long page end-->
+
+                    </div>
+                </div>
+                <!--one page end-->
+
+                <!--third page-->
+                <!--one page-->
+                <div class="swiper-slide" style="overflow: hidden;">
+                    <div id="have_video_map" style="position: absolute;z-index: 999;height: 27vh;width: 100vw;">
+                        <div style="width: 100vw;height: 27vh;top: -3.125vh;">
+                            <canvas id="canvas_3_page" style="box-shadow: 0px 0px 35px rgba(114, 114, 114, 0.899);"></canvas>
+                        </div>
+                    </div>
+                    <div style="height: 100vh;display: flex;align-items: center;z-index: 990;position: relative;text-align: center;">
+                        <!--content-->
+                        <!--long page start-->
+                        <div class="swiper" id="swiper-container4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" id="inner_swiper_3">
+
+                                    <div class="content" style="padding-top: 57vw;">
+                                        11月下旬开始，河南省信阳市各县为接收郑州高风险区的返乡大学生，分别在信阳站和信阳东站开设市县对接的大巴专线。固始县隶属于河南省信阳市，位于河南东南部，距离郑州市约500公里。12月3日这天，河南工业大学的许之和梁佳分别踏上了返固之路。<br>
+                                    </div>
+                                    
+                                    <div class="content" style="font-size: 100%;font-weight: 700;">
+                                        36座的大巴，塞满了近60个人
+                                    </div>
+                                    
+                                    <div class="content">
+                                        15点左右，梁佳从郑州东站到达信阳东站，恰逢固始县的接送大巴抵达高铁站，由于班次问题，仅有两辆大巴。为了尽早返乡，梁佳坐上了率先发车的一辆。<br>
+                                    </div>
+
+                                    <div class="content">
+                                        上车时，36座的大巴已坐无缺席，其中一位轮班司机告诉她，“肯定没座位了，下面还有这些人，想赶紧回就只能站到固始。”梁佳被后来超载上车的返乡人挤到了靠后的过道处，和同行的几位男同学打算就这样站到终点站，车程大约3个小时。<br>
+                                    </div>
+                                    
+                                    <div class="photo_style">
+                                        <img src="./asset/zgf-02.jpg">
+                                        信阳车站排队上大巴的大学生
+                                    </div>
+
+                                    <div class="content">
+                                        梁佳本以为只是没有座位，没想到车上又上来一些本不属于乘客车间的物件。其中两个轮班司机在车门口不断接力递送着本该放在大巴底部行李区的大小行李箱，车上仅剩的过道空间被行李箱挤满，逐渐高过了座位，离车顶仅剩一个行李箱的厚度。行李箱周边的人不时挪动调整自己的站姿和手上的随身行李。车尾的乘客不断后撤，留给他们的空间不断被压缩。
+                                    </div>
+
+                                    <div class="content">
+                                        “你这堆得这么挤，东西也挤，人也挤，要是出事了，这一车人一个都跑不掉！”几位车上的大叔不时抱怨着。“你想坐就坐，不想坐去下一班等着。”其中一名轮班司机急着说道，又不停地疏通堵在车门口的人群，搬运着需要“上车”的行李。
+                                    </div>
+
+                                    <div class="content">
+                                        车上车下，嘈嘈杂杂。
+                                    </div>
+
+                                    <div class="content">
+                                        梁佳和几位同学被面前的行李挤到无处驻足，她抓着座椅的靠背，低头不断寻找能够稍微落脚的地方。一旁坐着的阿姨将邻座的小孩抱在怀里，腾出来一个座位让他们坐着。几位男同学见状，将唯一的座位留给了梁佳。仲冬时节，来往的人们都穿上了厚衣物，邻座的阿姨尽量抱住自己的小孩，梁佳艰难将自己安置在座位上，就这样，三个人挤着二人座，身旁压迫而来的是需要抬头才能看见顶的行李堆。
+                                    </div>
+                                    
+                                    <div class="photo_style" style="position: relative;margin-top: 2vh;">
+                                        <video muted onclick="startplay()" style="width: 100vw;height: 50vh;" src="./asset/zgf-01.mp4" poster="./asset/zgf-04.png"></video>
+                                        被挤满的大巴车间
+                                    </div>
+
+                                    <div class="content">
+                                        发车前乘客的抱怨声是一直存在的，虽然在特殊时期，但仍希望司机能够调整，保障全车的人身安全，而司机却始终保持着之前的态度。直到大巴启动返程，这种声音才逐渐消失。
+                                    </div>
+
+                                    <div class="content">
+                                        17点40分左右，大巴最终安全抵达固始。简单的下车行为持续了近二十分钟。
+                                    </div>
+
+                                    <div class="content">
+                                        下车后，梁佳瞬时间感受到了轻松，她终于到家了。
+                                    </div>
+                                    
+                                    <div class="content" style="font-size: 100%;font-weight: 700;">
+                                        4小时的车程，消耗了13个小时
+                                    </div>
+
+                                    <div class="content">
+                                        与此同时，许之坐在另外一辆固始返乡大巴车上，18点，他仍在等待发车。
+                                    </div>
+
+                                    <div class="content">
+                                        郑州十二月初的清晨是寒冷的。许之清晨离校，坐上直达信阳市的高铁已是中午11点40分，正式开启他的返乡路。
+                                    </div>
+
+                                    <div class="content">
+                                        相较于外省的学生，河南省内的学生往返校园是十分便利的，仅用1个小时左右的时间，许之到达信阳东站，此时距离家乡固始仅剩160公里的路程。许之按照规定进行健康码查验、落地核酸和信息登记后，13:30左右来到各县安排的等候屋附近，等候室内外早已站满了返乡的人，其中大多都是大学生，等待着固始县的专班大巴。
+                                    </div>
+
+                                    <div class="photo_style">
+                                        <img src="./asset/zgf-03.jpg">
+                                        信阳东站固始县专班大巴等候室外
+                                    </div>
+
+                                    <div class="content">
+                                        郑州大学生返乡热潮之初，固始县的专班保持着每天“多辆尽送”的状态，但自十二月初开始，返乡大学生人数相对减少，固始县的专班大巴仅有每日下午的两或三班，其中两辆主要接送高风险地区返乡的大学生，从总量来看，固始县的班次是明显少于其他县的。
+                                    </div>
+
+                                    <div class="content">
+                                        大约15点左右，许之听到等候屋外司机的吆喝，收拾好行李跟着大部队来到两辆固始专班附近。“这一辆先走，能上就上，嫌挤的话坐另外一辆，另一辆要等报备的人来齐了再走。”为了尽早归家，大多人都选择挤上率先发车的大巴。窄小的车门口挤满了人和行李，许之被挤在人群外围，等轮到许之时，车内的空间已被塞满，甚至还在不断地进人。
+                                    </div>
+
+                                    <div class="content">
+                                        “想赶紧走的话能再让人往里面挤挤，嫌挤就坐下一班。”许之走向坐较晚发车的另一班车。 上车的时候大巴底部的行李区还留有大空间，车上的座位也未坐满。
+                                    </div>
+
+                                    <div class="content">
+                                        率先发车的大巴早已离开，许之所坐的这辆大巴一动不动地等来日落，新来的返乡大学生在5个小时内陆续上车。期间不断有人询问司机什么时候能够出发，司机也总是无奈地表示需要等到最后一个同学上车，自己也是在完成上级安排的接送任务，政府派车接送返乡人员是责任所在，没有盈利可言，加之车上都是高风险地区返乡人员，如果上级没有特别要求，从个人角度，鲜少有司机会请缨开车于市县之间。
+                                    </div>
+
+                                    <div class="content">
+                                        许之的父母每隔一小时都会发信息问问车走到哪里了，他最多的回复也是“车在等人，还没走”。许之的父母原本计划等他回来正好能够吃上一顿丰盛的接风饭，不曾料到在离家近160公里左右的地方等待了近7个小时，这期间，他无不期盼着引擎发动声。
+                                    </div>
+
+                                    <div class="content">
+                                        “走！”
+                                    </div>
+
+                                    <div class="content">
+                                        20点左右，最后一位报备的返乡大学生上车了，司机伸了伸懒腰，蓄势待发。等待中的静默被大巴的启动声打破，许之再一次开启返乡之路。大巴缓缓离开信阳东站，走上高速路。夜晚里的大巴车速度是较慢的，车厢又进入安静的状态，又是一次近4小时的等待。
+                                    </div>
+
+                                    <div class="content" style="margin-bottom: 15vh;">
+                                        0点30分左右，许之结束了长达近13个小时的返乡之路，他终于到家了。
+                                    </div>
+                                    <div onclick="onClick_to_menu()" class="back_menu_button">返回<br>目录</div>
+                                    <div style="text-align: center;width: 80vw;margin-left: 10vw;margin-top: 4vh;font-size: 1.1rem;color: #444444;margin-bottom: 10vh;">注：<br>
+                                        文中出现的名字均为化名<br>
+                                        图片及视频来源于受访者和网络</div>
+                                    <img src="./asset/tonextpage.png" style="width: 12vw;position: relative;top: -5vh;">
+                                </div>
+                            </div>
+                        </div>
+                        <!--long page end-->
+                        
+                    </div>
+                </div>
+                <!--one page end-->
+
+                <!--one page-->
+                <div class="swiper-slide" style="overflow: hidden;">
+                    <div style="position: absolute;z-index: 990;background-color: rgb(255, 255, 255);height: 100vh;width: 100vw;">
+                        <!---->
+                    </div>
+                    <div style="height: 100vh;display: flex;align-items: center;z-index: 99999;position: relative;text-align: center;">
+                        <div style="width: 100vw;">
+                            <div style="width: 100vw;font-size: 800%;font-family: 'EMOJI';"> 🚗 🚕 🚌<img src="./asset/xiexie.png" style="width: 25vw;top: 3vh;position: relative;left: 2vh;margin-left: 10vw;margin-right: 8vw;border: 3px solid rgb(0, 0, 0);border-radius: 5px;"></div>
+                        </div>
+                        <footer style="position: absolute;font-size: 1.2rem;color: #444444;z-index: 999;bottom: 3vh;text-align: center;width: 100vw;font-weight: 800;">Power By HuiLin &copy;</footer>
+                    </div>    
+                </div>
+                <!--one page end-->
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./public.js"></script>
+</html>
