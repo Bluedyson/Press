@@ -34,6 +34,7 @@ Its primary feature lies in the continuous advancement of a 🚗 on the map at t
 <script setup>
 import { ref } from 'vue';
 import { onMounted } from 'vue'
+import { withBase } from 'vitepress'
 
 const iframe = ref()
 const loading_div = ref()
@@ -42,7 +43,7 @@ const iframe_weight = ref(iframe_height.value * 0.52)
 
 
 onMounted(() => {
-    fetch("./html.txt")
+    fetch(withBase("/H5/html.txt"))
         .then((Response) =>  Response.text())
         .then((data) => iframe.value.srcdoc = data)
 

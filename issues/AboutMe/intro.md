@@ -4,10 +4,11 @@ aside: false
 
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
+import { withBase } from 'vitepress'
 
 const members = [
   {
-    avatar: './avator.jfif',
+    avatar: withBase('/avator.jfif'),
     name: "Zhou Yulin",
     links: [
       { icon: 'github', link: 'https://github.com/Bluedyson' },

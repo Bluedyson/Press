@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./public.css">
-    <link rel="stylesheet" href="./asset/EMOJI.css">
+    <link rel="stylesheet" href="/Press/H5/public.css">
+    <link rel="stylesheet" href="/Press/H5/asset/EMOJI.css">
     <link href="https://cdn.bootcdn.net/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css" rel="stylesheet">
 </head>
 <body style="overflow: hidden;">
     <div style="width: 100vw;height: 100vh;background-color: rgb(255, 255, 255);position: absolute;z-index: 1;"></div>
     <div style="width: 100vw;height: 99vh;position: absolute;" id="video_1">
         <div onclick="stopplay()" id="video_pause" style="position: absolute;font-size: 200%;margin-left: 88vw;margin-top: 1vh;background-color: rgba(36, 36, 36, 0.419);padding-left: 0.5rem;padding-right: 0.5rem;z-index: 0;">✖</div>
-        <video id="video_player" style="width: 100vw;height: 100vh;" src="./asset/zgf-01.mp4"></video>
+        <video id="video_player" style="width: 100vw;height: 100vh;" src="/Press/H5/asset/zgf-01.mp4"></video>
     </div>
     <div id="IN_page" style="height: 100%;width: 100vw;position: absolute;">
         <!-- Swiper -->
@@ -25,14 +25,14 @@
                 <div class="swiper-slide" style="overflow: hidden;">
                     <div style="position: absolute;z-index: 990;background-color: rgb(255, 255, 255);height: 100vh;width: 100vw;">
                         <div style="width: 100vw;height: 100vh;background-color: rgba(132, 132, 132, 0.314);position: absolute;z-index: 9999;"></div>
-                        <img src="./asset/content_page.png" style="width: 100vw;height: 100vh;filter: blur(4px);">
+                        <img src="/Press/H5/asset/content_page.png" style="width: 100vw;height: 100vh;filter: blur(4px);">
                     </div>
                     <div style="height: 100vh;display: flex;align-items: center;z-index: 99999;position: relative;text-align: center;">
                         <div style="width: 100vw;align-items: center;">
                             <div class="content" style="text-indent: 32px;">
                                 2022年11月下旬，河南省疫情愈演愈烈，为避免学生滞留，郑州高校通知学生尽快离校。在匆忙与忐忑之间郑州学子踏上了漫漫返乡路，昼夜兼程的网约车、顺风车和大巴车成为他们的归乡的摆渡工具。摆渡途中的所见所闻折射着疫情之下摆渡行业的人事冷暖。
                             </div>
-                            <img src="./asset/tonextpage.png" style="width: 12vw;position: relative;top: 30vh;">
+                            <img src="/Press/H5/asset/tonextpage.png" style="width: 12vw;position: relative;top: 30vh;">
                         </div>
                     </div>    
                 </div>
@@ -42,7 +42,7 @@
                 <div class="swiper-slide" style="overflow: hidden;">
                     <div style="position: absolute;z-index: 990;height: 100vh;width: 100vw;">
                         <div style="width: 100vw;height: 100vh;background-color: rgba(8, 8, 8, 0.204);position: absolute;z-index: 9999;"></div>
-                        <img src="./asset/content_page.png" style="width: 100vw;height: 100vh;filter: blur(4px);">
+                        <img src="/Press/H5/asset/content_page.png" style="width: 100vw;height: 100vh;filter: blur(4px);">
                     </div>
                     <div style="height: 100vh;display: flex;align-items: center;z-index: 99999;position: relative;text-align: center;">
                         <!--content-->
@@ -93,12 +93,12 @@
                                     </div>
                                     
                                     <div class="photo_style">
-                                        <img src="./asset/qhy_01.png">
+                                        <img src="/Press/H5/asset/qhy_01.png">
                                         河南工业大学门口等待的网约车
                                     </div>
 
                                     <div class="photo_style">
-                                        <img src="./asset/qhy_03.jpg">
+                                        <img src="/Press/H5/asset/qhy_03.jpg">
                                         郑州东站网约车入口
                                     </div>
 
@@ -111,7 +111,7 @@
                                     </div>
 
                                     <div class="photo_style">
-                                        <img src="./asset/qhy_02.jpg">
+                                        <img src="/Press/H5/asset/qhy_02.jpg">
                                         夜间充电站驻满了车辆
                                     </div>
 
@@ -188,7 +188,7 @@
                                     </div>
                                     
                                     <div class="photo_style">
-                                        <img src="./asset/wk-01.jpg">
+                                        <img src="/Press/H5/asset/wk-01.jpg">
                                         返乡期间连霍高速部分路段车况
                                     </div>
 
@@ -225,12 +225,12 @@
                                     </div>
 
                                     <div class="photo_style">
-                                        <img src="./asset/wk-02.png">
+                                        <img src="/Press/H5/asset/wk-02.png">
                                         沟赵收费站站口
                                     </div>
 
                                     <div class="photo_style">
-                                        <img src="./asset/wk-03.png">
+                                        <img src="/Press/H5/asset/wk-03.png">
                                         沟赵收费站站口等待顺风车的大学生
                                     </div>
 
@@ -287,7 +287,7 @@
                                     </div>
                                     
                                     <div class="photo_style">
-                                        <img src="./asset/zgf-02.jpg">
+                                        <img src="/Press/H5/asset/zgf-02.jpg">
                                         信阳车站排队上大巴的大学生
                                     </div>
 
@@ -308,7 +308,7 @@
                                     </div>
                                     
                                     <div class="photo_style" style="position: relative;margin-top: 2vh;">
-                                        <video muted onclick="startplay()" style="width: 100vw;height: 50vh;" src="./asset/zgf-01.mp4" poster="./asset/zgf-04.png"></video>
+                                        <video muted onclick="startplay()" style="width: 100vw;height: 50vh;" src="/Press/H5/asset/zgf-01.mp4" poster="/Press/H5/asset/zgf-04.png"></video>
                                         被挤满的大巴车间
                                     </div>
 
@@ -341,7 +341,7 @@
                                     </div>
 
                                     <div class="photo_style">
-                                        <img src="./asset/zgf-03.jpg">
+                                        <img src="/Press/H5/asset/zgf-03.jpg">
                                         信阳东站固始县专班大巴等候室外
                                     </div>
 
@@ -380,7 +380,7 @@
                                     <div style="text-align: center;width: 80vw;margin-left: 10vw;margin-top: 4vh;font-size: 1.1rem;color: #444444;margin-bottom: 10vh;">注：<br>
                                         文中出现的名字均为化名<br>
                                         图片及视频来源于受访者和网络</div>
-                                    <img src="./asset/tonextpage.png" style="width: 12vw;position: relative;top: -5vh;">
+                                    <img src="/Press/H5/asset/tonextpage.png" style="width: 12vw;position: relative;top: -5vh;">
                                 </div>
                             </div>
                         </div>
@@ -397,7 +397,7 @@
                     </div>
                     <div style="height: 100vh;display: flex;align-items: center;z-index: 99999;position: relative;text-align: center;">
                         <div style="width: 100vw;">
-                            <div style="width: 100vw;font-size: 800%;font-family: 'EMOJI';"> 🚗 🚕 🚌<img src="./asset/xiexie.png" style="width: 25vw;top: 3vh;position: relative;left: 2vh;margin-left: 10vw;margin-right: 8vw;border: 3px solid rgb(0, 0, 0);border-radius: 5px;"></div>
+                            <div style="width: 100vw;font-size: 800%;font-family: 'EMOJI';"> 🚗 🚕 🚌<img src="/Press/H5/asset/xiexie.png" style="width: 25vw;top: 3vh;position: relative;left: 2vh;margin-left: 10vw;margin-right: 8vw;border: 3px solid rgb(0, 0, 0);border-radius: 5px;"></div>
                         </div>
                         <footer style="position: absolute;font-size: 1.2rem;color: #444444;z-index: 999;bottom: 3vh;text-align: center;width: 100vw;font-weight: 800;">Power By HuiLin &copy;</footer>
                     </div>    
@@ -410,5 +410,5 @@
 
 </body>
 <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
-<script type="text/javascript" src="./public.js"></script>
+<script type="text/javascript" src="/Press/H5/public.js"></script>
 </html>

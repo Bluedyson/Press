@@ -2,17 +2,17 @@ mySwiper1 = ""
 var imgs_1 = []
 for (let i = 0; i < 192; i++) {
     imgs_1[i] = new Image;
-    imgs_1[i].src = "./asset/qhy/" + 'qhy_' + padding(i,3) + ".jpg";
+    imgs_1[i].src = "/Press/H5/asset/qhy/" + 'qhy_' + padding(i,3) + ".jpg";
 }
 var imgs_2 = []
 for (let i = 0; i < 477; i++) {
     imgs_2[i] = new Image;
-    imgs_2[i].src = "./asset/wk/" + 'wk_' + padding(i,3) + ".jpg";
+    imgs_2[i].src = "/Press/H5/asset/wk/" + 'wk_' + padding(i,3) + ".jpg";
 }
 var imgs_3 = []
 for (let i = 0; i < 606; i++) {
     imgs_3[i] = new Image;
-    imgs_3[i].src = "./asset/zgf/" + 'zgf_' + padding(i,3) + ".jpg";
+    imgs_3[i].src = "/Press/H5/asset/zgf/" + 'zgf_' + padding(i,3) + ".jpg";
 }
 
 window.onload = function () {
