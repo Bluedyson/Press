@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Portfolio
-      link: /Portfolio/Big_data_EmpiricalStudy
+      link: /portfolio/Big_data_EmpiricalStudy
     - theme: alt
       text: About Me
       link: /AboutMe/intro
