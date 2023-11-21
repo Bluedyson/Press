@@ -1,7 +1,7 @@
 # Big Data Empirical Study on the Optimization Path of Rural Short Video Value Guidance Effect
 
 ::: info
-Accepted by *Journalism lover* **（CSSCI）**, Expected to be released in the 10th issue.
+Accepted by *Journalism lover* **（CSSCI）**, [https://doi.org/10.16017/j.cnki.xwahz.2023.10.023](https://doi.org/10.16017/j.cnki.xwahz.2023.10.023).
 :::
 
 **Author:** Wenwen, Zhang.,Yiyu, Liu., **Yulin, Zhou.**
